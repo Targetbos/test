@@ -1,0 +1,104 @@
+@import "./src/__menu-item/menu-item.scss";
+$br: 1px solid #666;
+body {
+    margin: 0 auto;
+    padding: 0;
+    width: 1400px;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding: 0;
+    min-width: 1200px;
+    border: 1px solid #666;
+    box-sizing: border-box;
+}
+
+.header {
+    height: 7rem;
+    // border: $br;
+    background: #8c90cf;
+    margin-bottom: 1rem;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: $br;
+    min-height: 600px;
+}
+
+.left-menu {
+    width: 20%;
+    border-right: $br;
+}
+
+.wrap-content {
+    width: 80%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 2rem;
+}
+
+// .circle__wrap{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     padding: 0;
+//     width:100%;
+//     margin: 0 auto;
+//     height: 600px;
+// }
+// .circle__element{
+//     transition-property: width, height;
+//     transition-duration: 3s;
+//     position: fixed;
+//     transform: translateX(-50%) translateY(-50%);
+//     background-color: red;
+//     border-radius: 50%;
+//     width: 20px;
+//     height: 20px;
+// }
+.test__input {
+    width: 20%;
+    padding: 0.5rem 2rem;
+    border-radius: 0.25rem;
+    outline: none;
+    text-align: center;
+    &::placeholder {
+        color: rgba(0, 0, 0, 0.2);
+    }
+}
+
+.test__btn {
+    width: 26%;
+    padding: 0.5rem 2rem;
+    margin-top: 0.25rem;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: steelblue;
+}
+
+.line-axis {
+    fill: none;
+    stroke: #666666;
+    stroke-width: 1px;
+    opacity: 0.2;
+}
+
+svg {
+    margin-top: 50px;
+    border: 1px solid #666666;
+}
+
+.axis text {
+    font: 10px Verdana;
+}

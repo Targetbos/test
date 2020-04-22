@@ -1,0 +1,24 @@
+include ./src/__menu-item/menu-item.pug
+doctype html
+html
+    head
+        meta(charset="UTF-8")
+        link(rel="stylesheet" href="./index.scss")
+        script(src="http://d3js.org/d3.v3.min.js" charset="utf-8")
+        script(src="https://code.jquery.com/jquery-3.5.0.min.js")
+        script(src="./modules/__jquery-ui/jquery-ui.min.js")
+        link(href="./modules/__jtable/themes/metro/blue/jtable.min.css" rel="stylesheet" type="text/css")
+        script(src="./modules/__jtable/jquery.jtable.min.js")
+    body
+        .wrapper
+            header.header
+            .container  
+                nav.left-menu
+                    +menu-item({id: "glav", text: "Главная"})
+                    +menu-item({id: "d3", text: "D3.js"})
+                    +menu-item({id: "jtable", text: "JTable"})
+                    
+                .wrap-content
+                    .content
+            
+        script(src="./js/index.js")

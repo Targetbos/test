@@ -1,0 +1,24 @@
+{
+    "name": "test",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "d": "parcel index.pug --open",
+        "db": "parcel build -d build index.pug "
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "d3": "^5.15.1",
+        "html5-boilerplate": "^7.3.0",
+        "jquery": "^3.5.0",
+        "parsel": "^0.3.0"
+    },
+    "devDependencies": {
+        "cssnano": "^4.1.10",
+        "pug": "^2.0.4",
+        "sass": "^1.26.3"
+    }
+}
