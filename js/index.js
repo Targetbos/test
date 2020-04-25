@@ -1,6 +1,6 @@
 // import "./zamknutie.js";
 import { d3vis } from "./d3.js";
-import { jtable } from "./jtable.js";
+import { table } from "./table.js";
 
 document.querySelectorAll(".menu-item__link").forEach((el) => {
     el.onclick = (elem) => {
@@ -13,9 +13,9 @@ document.querySelectorAll(".menu-item__link").forEach((el) => {
                 clearContent();
                 d3vis();
                 break;
-            case "jtable":
+            case "table":
                 clearContent();
-                jtable();
+                table();
                 break;
             default:
                 console.log("Неизвестная страница");
@@ -99,12 +99,15 @@ function clearContent() {
 //     });
 // }
 //
-// var kon = (a, b) => { if (a && b) { return true; } else { return false; } }
-// var diz = (a, b) => { return Boolean([a, b].filter((e) => e == 1).length); }
-// var shef = (a, b) => { return Boolean([a, b].filter((e) => e == 0).length) }
-// var pirs = (a, b) => { if (!a && !b) { return true; } else { return false; } }
-// var xor = (a, b) => { if (a == b) { return false; } else { return true; } }
-// var res = (a, b) => {
-//     return shef(shef(shef(a, a), b), shef(shef(b, b), a));
+var kon = (a, b) => { if (a && b) { return true; } else { return false; } }
+var diz = (a, b) => { return Boolean([a, b].filter((e) => e == 1).length); }
+var shef = (a, b) => { return Boolean([a, b].filter((e) => e == 0).length) }
+var pirs = (a, b) => { if (!a && !b) { return true; } else { return false; } }
+var xor = (a, b) => { if (a == b) { return false; } else { return true; } }
+var res = (a, b) => {
+    return shef(shef(shef(a, a), b), shef(shef(b, b), a));
+}
+
+// var res2 = (a, b) {
+
 // }
-// console.log(res(1, 0));

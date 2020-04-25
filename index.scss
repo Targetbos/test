@@ -45,25 +45,20 @@ body {
     padding: 0 2rem;
 }
 
-// .circle__wrap{
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     padding: 0;
-//     width:100%;
-//     margin: 0 auto;
-//     height: 600px;
-// }
-// .circle__element{
-//     transition-property: width, height;
-//     transition-duration: 3s;
-//     position: fixed;
-//     transform: translateX(-50%) translateY(-50%);
-//     background-color: red;
-//     border-radius: 50%;
-//     width: 20px;
-//     height: 20px;
-// }
+.table {
+    width: 40%;
+    border-collapse: collapse;
+    & tr:nth-child(1) {
+        background: #9bf19b;
+        & td {
+            width: 10px;
+        }
+    }
+    & tr {
+        border: $br;
+    }
+}
+
 .test__input {
     width: 20%;
     padding: 0.5rem 2rem;
